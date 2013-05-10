@@ -5,12 +5,12 @@ import java.util.Map;
 
 /**
  * <p>
- * <p> Date: 13-5-6 Time: ÏÂÎç2:26 </p>
- * <p>¹¹½¨»º´æ</p>
- * <br/>1.ÈçºÎ³õÊ¼»¯
- * <br/>2.¸ôÒ»¶ÎÊ±¼äÔõÑù¸üĞÂ.±£Ö¤ËùÓĞµÄ»úÆ÷¶¼ÊÇÍ¬Ò»¸ö¸üĞÂÊ±¼ä£¿
- * <br/>3.ÓĞ¶àÌ¨»úÆ÷£¬ÈçºÎ±£Ö¤Ò»ÖÂ
- * <br/>4.²¢·¢¿ØÖÆ
+ * <p> Date: 13-5-6 Time: ä¸‹åˆ2:26 </p>
+ * <p>æ„å»ºç¼“å­˜</p>
+ * <br/>1.å¦‚ä½•åˆå§‹åŒ–
+ * <br/>2.éš”ä¸€æ®µæ—¶é—´æ€æ ·æ›´æ–°.ä¿è¯æ‰€æœ‰çš„æœºå™¨éƒ½æ˜¯åŒä¸€ä¸ªæ›´æ–°æ—¶é—´ï¼Ÿ
+ * <br/>3.æœ‰å¤šå°æœºå™¨ï¼Œå¦‚ä½•ä¿è¯ä¸€è‡´
+ * <br/>4.å¹¶å‘æ§åˆ¶ï¿½ï¿½ï¿½ï¿½
  *
  * @author xizhao.xsz
  */
@@ -33,7 +33,7 @@ public class CachePunishReasonDAO implements PunishReasonDAO {
         if(null==CAHCE_PUNISH_REASON_MAP){
             CAHCE_PUNISH_REASON_MAP = new HashMap<Object,Object>();
         }
-        CAHCE_PUNISH_REASON_MAP.put((long) (Math.random() * 100), "±±¾©");
+        CAHCE_PUNISH_REASON_MAP.put((long) (Math.random() * 100), "ï¿½ï¿½ï¿½ï¿½");
         DEATH_TIME = System.currentTimeMillis() + 1000 *10 + (long) (Math.random() * 1000 * 3);
         SET_COUNT++;
     }

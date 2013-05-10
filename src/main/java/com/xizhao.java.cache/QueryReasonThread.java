@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 
 /**
  * <p>
- * <p> Date: 13-5-6 Time: обнГ4:15 </p>
+ * <p> Date: 13-5-6 Time: О©╫О©╫О©╫О©╫4:15 </p>
  *
  * @author xizhao.xsz
  */
@@ -41,6 +41,7 @@ public class QueryReasonThread implements Runnable {
                 e.printStackTrace();
             }
         }
+        exec.shutdown();
         System.out.println("the end value of couunt:" + CachePunishReasonDAO.getSetCount());
 
     }
