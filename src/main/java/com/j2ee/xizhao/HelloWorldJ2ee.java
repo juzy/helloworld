@@ -11,6 +11,7 @@ import java.io.PrintWriter;
 /**
  * <p>
  * <p> Date: 13-5-13 Time: 下午3:51 </p>
+ * http://www.bccn.net/Article/web/jsp/jc/200409/72_3.html
  *
  * @author xizhao.xsz
  */

@@ -50,4 +50,13 @@
             <!--=======================j2ee end===================-->
         </dependencies>
     </dependencyManagement>
+    <build>
+        <finalName>helloworld</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
