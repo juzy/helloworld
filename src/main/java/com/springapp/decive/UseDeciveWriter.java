@@ -2,7 +2,7 @@ package com.springapp.decive;
 
 /**
  * <p>
- * <p> Date: 13-4-26 Time: ионГ11:15 </p>
+ * <p> Date: 13-4-26 Time:11:15 </p>
  *
  * @author xizhao.xsz
  */

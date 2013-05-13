@@ -15,6 +15,13 @@ import java.util.Map;
  * @author xizhao.xsz
  */
 public class CachePunishReasonDAO implements PunishReasonDAO {
+    /**TODO:xizhao
+     * 一个标准Cache的主要特征是：
+     （1）过期时间
+     （2）容量规划(重要)
+     （3）清除策略(重要)
+     （4）命中率统计  */
+
     private static Map<Object, Object> CAHCE_PUNISH_REASON_MAP;
     private static long DEATH_TIME;
     private static int SET_COUNT=0;

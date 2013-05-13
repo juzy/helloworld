@@ -42,7 +42,7 @@ public class QueryReasonThread implements Runnable {
             }
         }
         exec.shutdown();
-        System.out.println("the end value of couunt:" + CachePunishReasonDAO.getSetCount());
+        System.out.println("the end value of count:" + CachePunishReasonDAO.getSetCount());
 
     }
 }
