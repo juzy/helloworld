@@ -10,18 +10,32 @@ import java.util.List;
  * @author xizhao.xsz
  */
 public class ContactList {
-    public static List<Contact> getContacts()
-    {
-            List<Contact> contacts = new ArrayList<Contact>();
-        Contact con1= new Contact(),con2= new Contact();
+    public static List<Contact> contacts = new ArrayList<Contact>();
+
+    static {
+        Contact con1 = new Contact(), con2 = new Contact();
         con1.setFirstName("name1");
-        con1.setId(1l);
+        con1.setId("1");
         con1.setLastName("last");
         con1.setStreet("wensanRoad");
         con2.setFirstName("name2");
-         con2.setId(2l);
-         con2.setLastName("2last");
-         con2.setStreet("wenerRoad");
-        return  contacts;
+        con2.setId("2");
+        con2.setLastName("2last");
+        con2.setStreet("wenerRoad");
+        contacts.add(con1);
+        contacts.add(con2);
+    }
+
+    public static List<Contact> getContacts() {
+        return contacts;
+    }
+
+    public static void addContact(final Contact newContact) {
+        contacts.add(newContact);
+
+    }
+
+    public void removeContact(final int contactId) {
+        contacts.remove(contactId);
     }
 }

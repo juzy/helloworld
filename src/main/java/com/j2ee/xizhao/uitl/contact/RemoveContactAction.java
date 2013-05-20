@@ -1,7 +1,10 @@
 package com.j2ee.xizhao.uitl.contact;
 
+import com.j2ee.xizhao.domain.ContactList;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * <p>
@@ -12,7 +15,14 @@ import javax.servlet.http.HttpServletResponse;
 public class RemoveContactAction extends ContactsAction {
     @Override
     public String perform(final HttpServletRequest request, final HttpServletResponse response) {
-        throw new RuntimeException("This method is not implemented yet!");
+        int contactId = Integer.parseInt(request.getParameter("id"));
+
+        HttpSession session = request.getSession();
+        ContactList contacts = (ContactList) session.getAttribute("contacts");
+        contacts.removeContact(contactId);
+        session.setAttribute("contacts", contacts);
+
+        return "/contactList.jsp";
     }
 
     @Override

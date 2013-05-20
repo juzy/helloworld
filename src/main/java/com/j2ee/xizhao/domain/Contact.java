@@ -12,7 +12,7 @@ import lombok.Setter;
 public class Contact {
     @Setter
     @Getter
-    private Long id;
+    private String id;
 
     @Setter
     @Getter
@@ -23,6 +23,20 @@ public class Contact {
     @Setter
     @Getter
     private String street;
+
+    public enum ContactParaEnum {
+        ID("id"),
+        FIRST_NAME("firstName"),
+        LAST_NAME("lastName"),
+        STREET("street");
+
+        @Getter
+        private final String para;
+
+        private ContactParaEnum(String para) {
+            this.para = para;
+        }
+    }
 
 
 }

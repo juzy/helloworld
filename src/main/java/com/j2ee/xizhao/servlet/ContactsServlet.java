@@ -23,7 +23,7 @@ public class ContactsServlet extends HttpServlet {
 
     protected String getActionName(HttpServletRequest request) {
         String path = request.getServletPath();
-        return ActionFactory.ActionNameEnum.valueOf("").getClassName();
+        return ActionFactory.ActionNameEnum.valueOf(path.substring(1,path.lastIndexOf("."))).getKeyCode();
     }
 
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
