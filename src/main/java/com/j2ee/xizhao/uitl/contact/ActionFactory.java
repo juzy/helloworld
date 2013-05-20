@@ -13,17 +13,10 @@ import java.util.Map;
  */
 public class ActionFactory {
 
-
-    public static Map map;
-
-    static {
-        map = defaultMap();
-    }
-
-    public static Action create(ActionNameEnum actionNameEnum) {
-        Class klass = (Class) map.get(actionNameEnum.getClassName());
+    public static Action create(String actionName) {
+        Class klass = ActionNameEnum.valueOf(actionName).getKlass();
         if (null == klass) {
-            throw new IllegalArgumentException("can not find action class:" + actionNameEnum.getClassName());
+            throw new IllegalArgumentException("can not find action class:" + actionName);
         }
         Action actionInstance = null;
         try {
@@ -34,26 +27,19 @@ public class ActionFactory {
         return actionInstance;
     }
 
-    private static Map defaultMap() {
-        Map map = new HashMap();
-        map.put("index", BootstrapAction.class);
-        return map;
-    }
-
     public enum ActionNameEnum {
-        //FIXME:xizhao
-        BOOTSTRAP("index", BootstrapAction.class.getName()),
-        ADDCONTACT("addContactAction", AddContactAction.class.getName()),
-        REMOVECONTACT("removeContactAction", RemoveContactAction.class.getName());
+        BOOTSTRAP("index", BootstrapAction.class),
+        ADDCONTACT("addContactAction", AddContactAction.class),
+        REMOVECONTACT("removeContactAction", RemoveContactAction.class);
 
-        private ActionNameEnum(String keyCode, String className) {
+        private ActionNameEnum(String keyCode, Class klass) {
             this.keyCode = keyCode;
-            this.className = className;
+            this.klass = klass;
         }
 
         @Getter
         private final String keyCode;
         @Getter
-        private final String className;
+        private final Class klass;
     }
 }
