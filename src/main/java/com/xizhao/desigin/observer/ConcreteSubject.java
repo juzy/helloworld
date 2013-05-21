@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * <p>
- * <p> Date: 13-5-20 Time: ä¸‹åˆ4:42 </p>
+ * <p> Date: 13-5-20 Time: ÏÂÎç4:42 </p>
  *
  * @author xizhao.xsz
  */
