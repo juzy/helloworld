@@ -64,6 +64,11 @@
     <form method="post" action="addContactAction.perform">
         <table>
             <tr>
+                <td>id:
+                <td>
+                <td><input type="text" size="30" name="id"></td>
+            </tr>
+            <tr>
                 <td>First Name:
                 <td>
                 <td><input type="text" size="30" name="firstname"></td>
@@ -78,30 +83,9 @@
                 <td>
                 <td><input type="text" size="30" name="street"></td>
             </tr>
-            <tr>
-                <td>City:
-                <td>
-                <td><input type="text" size="30" name="city"></td>
-            </tr>
-            <tr>
-                <td>State:
-                <td>
-                <td><input type="text" size="30" name="state"></td>
-            </tr>
-            <tr>
-                <td>Zip:
-                <td>
-                <td><input type="text" size="30" name="zip"></td>
-            </tr>
-            <tr>
-                <td>Type:
-                <td>
-                <td><input type="radio" size="30" name="type" value="family">
-                    Family <input type="radio" size="30" name="type"
-                                  value="acquaintance"
-                                  checked> Acquaintance
-                </td>
-            </tr>
+
+
+
         </table>
         <br/>
         <input type="submit" name="addContact" value="  Add  ">

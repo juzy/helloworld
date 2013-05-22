@@ -14,7 +14,7 @@ import java.util.Map;
 public class ActionFactory {
 
     public static Action create(String actionName) {
-        Class klass = ActionNameEnum.valueOf(actionName).getKlass();
+        Class klass = ActionNameEnum.fromKeyCode(actionName).getKlass();
         if (null == klass) {
             throw new IllegalArgumentException("can not find action class:" + actionName);
         }
@@ -41,5 +41,17 @@ public class ActionFactory {
         private final String keyCode;
         @Getter
         private final Class klass;
+
+        public static ActionNameEnum fromKeyCode(String keycode) {
+            for (ActionNameEnum each : ActionNameEnum.values()) {
+                if (each.getKeyCode().equalsIgnoreCase(keycode)) {
+                    return each;
+                }
+            }
+            return null;
+
+
+        }
+
     }
 }
