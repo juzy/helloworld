@@ -22,6 +22,10 @@
             <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
@@ -41,6 +45,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>0.10.4</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>14.0.1</version>
             </dependency>
             <!--=======================j2ee start=================-->
             <dependency>
@@ -68,8 +77,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
                     <warName>helloworld</warName>
-                    <webappDirectory>target </webappDirectory>
-
+                    <webappDirectory>target</webappDirectory>
                     <webResources>
                         <resource>
                             <directory>src/main/webapp</directory>
