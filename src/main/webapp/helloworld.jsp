@@ -27,13 +27,10 @@
 <hr size="2"/>
 <table frame="below" width="100%">
     <tr>
-        <th align="left"></th>
-        <th align="left">Name</th>
+        <th align="left">Id</th>
+        <th align="left">FirstName</th>
+        <th align="left">LastName</th>
         <th align="left">Street</th>
-        <th align="left">City</th>
-        <th align="left">State</th>
-        <th align="left">Zip</th>
-        <th align="left">Type</th>
     </tr>
     <%
         List list = contacts.getContacts();

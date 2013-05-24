@@ -32,7 +32,7 @@ public class EventReceive {
     }
 
     public static void main(String[] args) {
-        new EventReceive().shouldDetectEventWithoutListeners();
+        new EventReceive().shouldReceiveMutipleEvent();
 
     }
 }
