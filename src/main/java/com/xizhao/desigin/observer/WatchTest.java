@@ -1,5 +1,9 @@
 package com.xizhao.desigin.observer;
 
+import com.sun.deploy.net.HttpRequest;
+
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * <p>
  * <p> Date: 13-5-20 Time: 下午5:28 </p>
@@ -18,6 +22,5 @@ public class WatchTest {
         watched.setData("start");
         watched.setData("run");
         watched.setData("stop");
-
     }
 }
