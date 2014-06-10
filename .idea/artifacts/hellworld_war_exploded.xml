@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="hellworld:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/hellworld_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="hellworld" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:0.10.4" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:14.0.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="hellworld/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -39,6 +39,7 @@ public class ActionFactory {
 
         @Getter
         private final String keyCode;
+
         @Getter
         private final Class klass;
 
