@@ -1,4 +1,4 @@
-package com.xizhao.desigin.observer.asyn;
+package com.xizhao.design.observer.asyn;
 
 
 /**

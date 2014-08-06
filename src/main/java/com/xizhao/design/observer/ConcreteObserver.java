@@ -1,4 +1,4 @@
-package com.xizhao.desigin.observer;
+package com.xizhao.design.observer;
 
 /**
  * <p>
