@@ -4,7 +4,7 @@ package com.xizhao.effectivejava;
  * User: xizhao.xsz
  * Time:2014-06-16 16:43
  * see effective java item2--Consider a builder when faced with many constructor parameters
- * ÓÅµã£º1.ÈİÒ×ÔÄ¶Á 2.set²ÎÊı²»Ò×³ö´í 3.³õÊ¼»¯¿ÉÒÔÒ»´ÎÍê³É
+ * ä¼˜ç‚¹ï¼š1.å®¹æ˜“é˜…è¯» 2.setå‚æ•°ä¸æ˜“å‡ºé”™ 3.åˆå§‹åŒ–å¯ä»¥ä¸€æ¬¡å®Œæˆ
  */
 public class NutritionFacts {
     private final int servingSize;
