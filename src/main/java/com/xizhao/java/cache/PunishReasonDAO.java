@@ -11,5 +11,5 @@ import java.util.Map;
  */
 public interface PunishReasonDAO {
 
-    Map<Object, Object> getReasons() throws CacheException;
+    Map<Object, Object> getReasons() throws CacheException ;
 }

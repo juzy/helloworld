@@ -1,6 +1,7 @@
 package com.j2ee.xizhao.domain;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 /**
@@ -12,6 +13,7 @@ import lombok.Setter;
 public class Contact {
     @Setter
     @Getter
+    @NonNull
     private String id;
 
     @Setter
@@ -37,6 +39,8 @@ public class Contact {
             this.para = para;
         }
     }
+
+
 
 
 }
