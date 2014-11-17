@@ -1,4 +1,4 @@
-package com.xizhao.java.init;
+package com.xizhao.java.cache.init;
 
 import java.util.Collections;
 import java.util.HashMap;
